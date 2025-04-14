@@ -1,0 +1,90 @@
+.contact-container {
+  background: url("https://source.unsplash.com/1600x900/?city,skyline") no-repeat center center/cover;
+  padding: 80px 10%;
+  color: white;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.contact-description {
+  max-width: 600px;
+  margin: 10px auto 30px;
+  font-size: 16px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 40%;
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-item .icon {
+  font-size: 24px;
+  background: #ffffff1a;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 50%;
+  background: #302c2c;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+  margin-bottom: 15px;
+  color: #302c2c;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #555;  /* Slightly lighter grey border */
+  border-radius: 5px;
+  background: #3a3a3a; /* Dark grey background */
+  color: white; /* White text for contrast */
+}
+
+.contact-form form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form form button {
+  width: 100%;
+  background: #E67E22;
+  color: #302c2c;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form form button:hover {
+  background: #D35400;
+}

@@ -1,0 +1,108 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black; /* Keeps navbar visible */
+  z-index: 10000; /* Ensures it's always on top */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+/* GatePass Form Container */
+/* GatePass Form Container */
+.gatepass-container {
+  width: 90%;
+  max-width: 450px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #333; /* Dark grey background */
+  text-align: center;
+  color: white; /* White font color */
+  position: fixed; /* Keeps it centered on the screen */
+  top: 50%; /* Centers vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000; /* Ensures it appears above other elements */
+}
+
+  
+  /* Form Heading */
+  .gatepass-heading {
+    color: rgb(241, 77, 7);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Form Styles */
+  .gatepass-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    
+  }
+  
+  /* Radio Button Group */
+  .gatepass-radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Input Fields */
+  .gatepass-input, .gatepass-textarea {
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #444;
+    color: white;
+    font-size: 14px;
+  }
+
+  /* Textarea */
+  .gatepass-textarea {
+    min-height: 60px;
+    resize: none;
+  }
+  
+  /* Button */
+  .gatepass-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button Hover Effect */
+  .gatepass-button:hover {
+    background-color: #0056b3;
+  }
+  /* Close Button */
+  /* Close Icon */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000; /* Ensures it's clickable */
+  color: #ff3333;
+}
+
+
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .gatepass-container {
+      padding: 15px;
+    }
+  }

@@ -1,0 +1,41 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh; /* Full screen height */
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+  position: fixed; /* Keep sidebar fixed */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.location-content {
+  margin-left: 270px; /* Space for fixed sidebar */
+  padding: 20px;
+  flex-grow: 1;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}

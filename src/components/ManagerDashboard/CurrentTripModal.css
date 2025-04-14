@@ -1,0 +1,220 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.current-trip-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.trip-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trip-main-info, .trip-details {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.info-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.info-group {
+  flex: 1;
+}
+
+.info-group h3 {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.info-group p {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.status.active {
+  background-color: #e1f7e1;
+  color: #28a745;
+}
+
+.status.completed {
+  background-color: #e1f7e1;
+  color: #28a745;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #ffc107;
+}
+
+.status.in.progress {
+  background-color: #cce5ff;
+  color: #007bff;
+}
+
+.trip-purpose, .trip-notes {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.trip-checkpoints {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.checkpoints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.checkpoint-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.checkpoint-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-dot.completed {
+  background-color: #28a745;
+}
+
+.status-dot.in.progress {
+  background-color: #007bff;
+}
+
+.status-dot.pending {
+  background-color: #ffc107;
+}
+
+.checkpoint-info {
+  flex: 1;
+}
+
+.checkpoint-info .location {
+  font-weight: 500;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.checkpoint-info .time {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
+
+.checkpoint-status-text {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.checkpoint-status-text.completed {
+  color: #28a745;
+}
+
+.checkpoint-status-text.in.progress {
+  color: #007bff;
+}
+
+.checkpoint-status-text.pending {
+  color: #ffc107;
+}
+
+.modal-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #5a6268;
+}
+
+.modal-header .close-btn {
+  background: none;
+  color: #6c757d;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.modal-header .close-btn:hover {
+  color: #5a6268;
+}

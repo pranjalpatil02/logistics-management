@@ -1,0 +1,18 @@
+.additional-stats {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.additional-stats h3 {
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.additional-stats .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}

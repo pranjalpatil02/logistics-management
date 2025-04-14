@@ -1,0 +1,143 @@
+.current-trip-modal {
+  max-width: 800px;
+  width: 90%;
+}
+
+.trip-info-container {
+  padding: 20px;
+}
+
+.trip-main-info {
+  margin-bottom: 24px;
+}
+
+.info-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.info-group {
+  flex: 1;
+}
+
+.info-group h3 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.info-group p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.trip-details {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.trip-purpose,
+.trip-notes {
+  margin-bottom: 24px;
+}
+
+.trip-checkpoints {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.checkpoints-list {
+  margin-top: 16px;
+}
+
+.checkpoint-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.checkpoint-status {
+  margin-right: 16px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status-dot.completed {
+  background-color: #28a745;
+}
+
+.status-dot.in.progress {
+  background-color: #ffc107;
+}
+
+.status-dot.pending {
+  background-color: #6c757d;
+}
+
+.checkpoint-info {
+  flex: 1;
+}
+
+.checkpoint-info .location {
+  font-weight: 500;
+  margin: 0;
+}
+
+.checkpoint-info .time {
+  color: #666;
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+.checkpoint-status-text {
+  font-size: 14px;
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.checkpoint-status-text.completed {
+  color: #28a745;
+  background-color: #e6f4ea;
+}
+
+.checkpoint-status-text.in.progress {
+  color: #ffc107;
+  background-color: #fff8e6;
+}
+
+.checkpoint-status-text.pending {
+  color: #6c757d;
+  background-color: #f8f9fa;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.status.active {
+  color: #28a745;
+  background-color: #e6f4ea;
+}
+
+.status.pending {
+  color: #ffc107;
+  background-color: #fff8e6;
+}
+
+.status.completed {
+  color: #6c757d;
+  background-color: #f8f9fa;
+}
